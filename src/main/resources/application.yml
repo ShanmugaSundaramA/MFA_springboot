@@ -1,0 +1,36 @@
+azure:
+  activedirectory:
+    b2c:
+      base-uri: https://citpldemo.b2clogin.com/citpldemo.onmicrosoft.com/B2C_1_signup/
+      client-id:
+      client-secret:
+      tenant-id: 
+      logout-success-url: https://citpleca.ckdigital.in/api
+      user-flows:
+        sign-up-or-sign-in: B2C_1_signup
+      redirect:
+        uri: 
+
+app:
+  protect:
+    authenticated: /token_details , /signin , /token
+  secret-key: ======================hepltroveApplicationspringBoot==============================================
+  expiration-ms: 86400000
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+
+spring:
+  application:
+    name: apps
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/apps
+
+server:
+  servlet:
+    context-path: /api
+  forward-headers-strategy: native
