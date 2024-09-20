@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "app.protect.authenticated",
+    "type": "java.lang.String[]",
+    "description": "limit these pages to authenticated users. Use '=/route1' for a single route. Use '=/route1, /route2' for multiple."
+  },
+  {
+    "name": "app.secret-key",
+    "type": "java.lang.String",
+    "description": "A description for 'app.secret-key'"
+  },
+  {
+    "name": "app.expiration-ms",
+    "type": "java.lang.String",
+    "description": "A description for 'app.expiration-ms'"
+  },
+  {
+    "name": "azure.activedirectory.b2c.redirect.uri",
+    "type": "java.lang.String",
+    "description": "A description for 'azure.activedirectory.b2c.redirect.uri'"
+  }
+]}
